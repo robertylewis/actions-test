@@ -7,10 +7,11 @@ on:
 jobs:
   label-new-contributor:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    # - name: Checkout code
+    #   uses: actions/checkout@v2
 
     - name: Get PR author
       id: pr-author
