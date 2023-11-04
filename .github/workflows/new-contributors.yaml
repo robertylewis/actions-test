@@ -32,7 +32,7 @@ jobs:
             state: "closed", // You may change this if you also want to count open PRs.
             author
           })
-          return (prs.data.length < 5)
+          return (prs.data.length < 10)
 
     - name: Add label if new contributor
       if: steps.check-contributor.outputs.result == 'true'
